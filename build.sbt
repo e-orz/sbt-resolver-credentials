@@ -59,4 +59,4 @@ ThisBuild / githubWorkflowPublish := Seq(
 )
 
 ThisBuild / sonatypeCredentialHost := sonatypeCentralHost
-
+ThisBuild / versionScheme := Some("semver-spec")
