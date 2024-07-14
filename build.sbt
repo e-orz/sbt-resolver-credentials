@@ -1,7 +1,8 @@
+import xerial.sbt.Sonatype.sonatypeCentralHost
 
 name := """sbt-resolver-credentials"""
 organization := "com.eorzitzer"
-version := "0.1-SNAPSHOT"
+//version := "0.1-SNAPSHOT"
 
 sbtPlugin := true
 
@@ -20,14 +21,14 @@ sbtPlugin := true
 //scalacOptions in Test ++= Seq("-Yrangepos")
 
 inThisBuild(List(
-  organization := "com.eorzitzer",
-  homepage := Some(url("https://github.com/e-orz/something")),
+  organization := "com.orzitzer",
+  homepage := Some(url("https://github.com/e-orz/sbt-resolver-credentials")),
   licenses := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),
   developers := List(
     Developer(
       "e-orz",
       "Eli Orzitzer",
-      "foo@bar.org",
+      "e_orz@yahoo.com",
       url("https://github.com/e-orz")
     )
   )
@@ -56,4 +57,6 @@ ThisBuild / githubWorkflowPublish := Seq(
     )
   )
 )
+
+ThisBuild / sonatypeCredentialHost := sonatypeCentralHost
 
