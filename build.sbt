@@ -61,4 +61,5 @@ ThisBuild / githubWorkflowPublish := Seq(
 ThisBuild / sonatypeCredentialHost := sonatypeCentralHost
 ThisBuild / versionScheme := Some("semver-spec")
 ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec.temurin("17"))
+// Publishing to maven central requires the below config. see https://www.scala-sbt.org/1.x/docs/Plugins.html#Publishing+a+plugin
 ThisBuild / sbtPluginPublishLegacyMavenStyle := false
