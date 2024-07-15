@@ -61,3 +61,4 @@ ThisBuild / githubWorkflowPublish := Seq(
 ThisBuild / sonatypeCredentialHost := sonatypeCentralHost
 ThisBuild / versionScheme := Some("semver-spec")
 ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec.temurin("17"))
+ThisBuild / sbtPluginPublishLegacyMavenStyle := false
