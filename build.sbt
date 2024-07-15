@@ -1,7 +1,7 @@
 import xerial.sbt.Sonatype.sonatypeCentralHost
 
 name := """sbt-resolver-credentials"""
-organization := "com.eorzitzer"
+//organization := "com.orzitzer"
 //version := "0.1-SNAPSHOT"
 
 sbtPlugin := true
@@ -34,7 +34,7 @@ inThisBuild(List(
   )
 ))
 
-console / initialCommands := """import com.eorzitzer.sbt._"""
+console / initialCommands := """import com.orzitzer.sbt._"""
 
 enablePlugins(ScriptedPlugin)
 // set up 'scripted; sbt plugin for testing sbt plugins
@@ -60,3 +60,4 @@ ThisBuild / githubWorkflowPublish := Seq(
 
 ThisBuild / sonatypeCredentialHost := sonatypeCentralHost
 ThisBuild / versionScheme := Some("semver-spec")
+ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec.temurin("17"))

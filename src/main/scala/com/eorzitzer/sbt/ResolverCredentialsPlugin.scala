@@ -1,4 +1,4 @@
-package com.eorzitzer.sbt
+package com.orzitzer.sbt
 
 import lmcoursier.CoursierConfiguration
 import lmcoursier.definitions.Authentication

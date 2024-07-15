@@ -1,5 +1,5 @@
-package com.eorzitzer.sbt
+package com.orzitzer.sbt
 
-class ResolverCredentialsTest {
+class ResolverCredentialsSpec {
   // write tests with your preferred framework
 }
